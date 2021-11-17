@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "643767550890",
+    "project_id": "takemyewaste-67a45",
+    "storage_bucket": "takemyewaste-67a45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643767550890:android:aee4cd6d1ebe7d3ed961d3",
+        "android_client_info": {
+          "package_name": "com.example.takemyewaste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643767550890-2eqbkk4dvle2gdt8tlubu0bpfvi7ugjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXeR_Xz3ky-PnCFCQEB0sbu5GtClnj8Vw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643767550890-2eqbkk4dvle2gdt8tlubu0bpfvi7ugjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

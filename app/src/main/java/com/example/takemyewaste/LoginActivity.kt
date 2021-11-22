@@ -59,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
 
         //forget password
         binding.forgetIv.setOnClickListener {
-            //startActivity(Intent(this, ForgetPasswordActivity::class.java))
+            startActivity(Intent(this, ForgetPasswordActivity::class.java))
         }
 
         binding.loginBtn.setOnClickListener {

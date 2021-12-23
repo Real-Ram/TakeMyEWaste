@@ -39,10 +39,6 @@ class ForgetPasswordActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
 
         }
-
-        binding.backBtn.setOnClickListener {
-            onBackPressed()
-        }
     }
 
     private var email = ""

@@ -9,6 +9,7 @@ import android.widget.Toast
 import com.example.takemyewaste.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
+import java.util.regex.Pattern
 
 class RegisterActivity : AppCompatActivity() {
     //view binding
@@ -32,9 +33,9 @@ class RegisterActivity : AppCompatActivity() {
         progressDialog.setTitle("Please wait")
         progressDialog.setCanceledOnTouchOutside(false)
 
-        //back button
-        binding.backBtn.setOnClickListener {
-            onBackPressed()
+        //sign in button
+        binding.signinBtn.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         //register button
@@ -50,12 +51,14 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private var name = ""
+    private var mobile = ""
     private var email = ""
     private var password = ""
 
     private fun validateData() {
         //input data
         name = binding.nameEt.text.toString().trim()
+        mobile = binding.mobileEt.text.toString().trim()
         email = binding.emailEt.text.toString().trim()
         password = binding.passwordEt.text.toString().trim()
         val cPassword = binding.cpasswordEt.text.toString().trim()
@@ -63,6 +66,9 @@ class RegisterActivity : AppCompatActivity() {
         //validate data
         if (name.isEmpty()) {
             Toast.makeText(this, "Enter Your Name....", Toast.LENGTH_SHORT).show()
+        }
+        else if (!Pattern.compile("[6-9][0-9]{9}").matcher(mobile).matches()) {
+            Toast.makeText(this, "Invalid Mobile Pattern....", Toast.LENGTH_SHORT).show()
         }
         else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             Toast.makeText(this, "Invalid Email Pattern....", Toast.LENGTH_SHORT).show()
@@ -116,7 +122,7 @@ class RegisterActivity : AppCompatActivity() {
         hashMap["uid"] = uid
         hashMap["email"] = email
         hashMap["name"] = name
-        hashMap["profileImage"] = ""
+        hashMap["mobile"] = mobile
         hashMap["userType"] = "user"
         hashMap["timestamp"] = timestamp
 

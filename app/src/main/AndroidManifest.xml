@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".UpdateDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewPickUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".ForgetPasswordActivity"
             android:exported="false" />
         <activity

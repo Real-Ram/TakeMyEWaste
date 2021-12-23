@@ -51,12 +51,6 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 
-        //handle click, back button
-
-        binding.backBtn.setOnClickListener {
-            onBackPressed()
-        }
-
         //forget password
         binding.forgetIv.setOnClickListener {
             startActivity(Intent(this, ForgetPasswordActivity::class.java))

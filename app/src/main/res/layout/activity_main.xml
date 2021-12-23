@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back01"
+    android:background="@color/white"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -26,32 +26,34 @@
         android:text="@string/name1"
         android:textColor="@color/black"
         android:textSize="36sp" />
+
     <Button
+        android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/loginBtn"
         android:layout_above="@id/signupBtn"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/shape_button01"
-        android:text="LOGIN"
-        android:fontFamily="@font/poppins"
-        android:textStyle="bold"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:textColor="@color/white"/>
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_button01"
+        android:fontFamily="@font/poppins"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
     <Button
+        android:id="@+id/signupBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signupBtn"
         android:layout_alignParentBottom="true"
-        android:text="SIGN UP"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="30dp"
+        android:background="@drawable/shape_button02"
         android:fontFamily="@font/poppins"
-        android:textStyle="bold"
-        android:textColor="@color/purple_500"
-        android:background="@drawable/shape_button02"/>
+        android:text="SIGN UP"
+        android:textColor="#6e5ff6"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

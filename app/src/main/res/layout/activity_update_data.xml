@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".RegisterActivity">
+    tools:context=".UpdateDataActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,51 +17,23 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="22dp"
+                android:drawableRight="@drawable/half_circle"
                 android:fontFamily="@font/poppins_semibold"
-                android:gravity="center_horizontal"
-                android:text="Register"
+                android:gravity="bottom"
+                android:text="Update Your Account"
                 android:textColor="#333232"
                 android:textSize="30sp" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="right|bottom"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginBottom="7.3dp"
-                    android:background="@drawable/small_cicle" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/half_circle"
-                    android:layout_width="50dp"
-                    android:layout_height="100dp"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/half_circle" />
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:paddingLeft="14.5dp">
 
@@ -72,7 +44,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
+                android:layout_height="480dp"
                 android:layout_marginLeft="13dp"
                 android:layout_marginRight="35.6dp"
                 android:backgroundTint="@color/new_blue"
@@ -88,12 +60,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20.3dp"
+                        android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_semibold"
                         android:gravity="center_horizontal"
                         android:text="Fill the Details!!"
                         android:textColor="@color/white"
-                        android:textSize="16.7sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -107,17 +79,17 @@
                     <EditText
                         android:id="@+id/nameEt"
                         android:layout_width="match_parent"
-                        android:hint="FirstName LastName"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="FirstName LastName"
                         android:inputType="textPersonName"
                         android:maxLength="24"
                         android:maxLines="1"
                         android:paddingTop="5dp"
-                        android:textColor="@color/white"
                         android:textColorHint="@color/hint_white"
                         android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="12sp" />
+                        android:textSize="15sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -139,15 +111,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="987654321"
                         android:inputType="phone"
                         android:maxLength="10"
                         android:maxLines="1"
                         android:paddingTop="5dp"
-                        android:hint="987654321"
-                        android:textColor="@color/white"
                         android:textColorHint="@color/hint_white"
                         android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="12sp" />
+                        android:textSize="15sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -170,14 +142,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="Example@gmail.com"
                         android:inputType="textEmailAddress"
                         android:maxLength="24"
                         android:maxLines="1"
                         android:paddingTop="5dp"
-                        android:textColor="@color/white"
-                        android:hint="Example@gmail.com"
-                        android:textColorHint="@color/hint_white"                        android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="12sp" />
+                        android:textColorHint="@color/hint_white"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="15sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -196,19 +169,20 @@
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
-                        android:layout_height="36dp"
+                        android:layout_height="60dp"
                         app:passwordToggleEnabled="true"
-                        app:passwordToggleTint="#9e9d9d" >
+                        app:passwordToggleTint="#9e9d9d">
 
                         <EditText
                             android:id="@+id/passwordEt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@android:color/transparent"
+                            android:fontFamily="@font/poppins_regular"
                             android:inputType="textPassword"
                             android:textColor="@color/white"
                             android:textCursorDrawable="@drawable/cursor_color"
-                            android:textSize="12sp"/>
+                            android:textSize="15sp" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -221,31 +195,24 @@
                         android:textColor="@color/white"
                         android:textSize="12.3sp" />
 
-                    <RelativeLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingTop="5dp">
+                        android:layout_height="60dp"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="#9e9d9d">
 
-                        <com.google.android.material.textfield.TextInputLayout
+                        <EditText
+                            android:id="@+id/cpasswordEt"
                             android:layout_width="match_parent"
-                            android:layout_height="36dp"
-                            app:passwordToggleEnabled="true"
-                            app:passwordToggleTint="#9e9d9d" >
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/poppins_regular"
+                            android:inputType="textPassword"
+                            android:textColor="@color/white"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textSize="15sp" />
 
-                            <EditText
-                                android:id="@+id/cpasswordEt"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@android:color/transparent"
-                                android:inputType="textPassword"
-                                android:textColor="@color/white"
-                                android:textCursorDrawable="@drawable/cursor_color"
-                                android:textSize="12sp"/>
-
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                    </RelativeLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
             </LinearLayout>
@@ -271,66 +238,9 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center"
-                android:text="Submit"
+                android:text="Update"
                 android:textColor="#ffffff"
                 android:textSize="15sp" />
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="7dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:gravity="center_horizontal"
-                android:text="Old User?"
-                android:textColor="#333232"
-                android:textSize="13.3sp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/signinBtn"
-                android:layout_marginLeft="5dp"
-                android:fontFamily="@font/poppins_regular"
-                android:gravity="center_horizontal"
-                android:text="Sign In"
-                android:textColor="#6e5ff6"
-                android:textSize="13.3sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-            <View
-                android:layout_width="85.6dp"
-                android:layout_height="1dp"
-                android:layout_gravity="center"
-                android:background="#d2d2d2" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:gravity="center_horizontal"
-                android:text="@string/name1"
-                android:textColor="#333232"
-                android:textSize="12sp" />
-            <View
-                android:layout_width="85.6dp"
-                android:layout_height="1dp"
-                android:layout_gravity="center"
-                android:background="#d2d2d2" />
         </LinearLayout>
     </LinearLayout>
 

@@ -109,6 +109,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_email_gray"
                         android:hint="Example@gmail.com"
                         android:inputType="textEmailAddress"
                         android:maxLength="24"
@@ -126,7 +127,7 @@
                         android:background="#9e9e9e" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="23dp"
                         android:fontFamily="@font/poppins_regular"
@@ -142,18 +143,20 @@
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="180dp"
-                            android:layout_height="36dp"
+                            android:layout_height="40dp"
                             app:passwordToggleEnabled="true"
                             app:passwordToggleTint="#9e9d9d">
 
-                            <EditText
+                            <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/passwordEt"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:background="@android:color/transparent"
+                                android:drawableStart="@drawable/ic_email_gray"
+                                android:ems="15"
                                 android:inputType="textPassword"
+                                android:paddingTop="10dp"
                                 android:textColor="@color/white"
-                                android:textCursorDrawable="@drawable/cursor_color"
                                 android:textSize="12sp" />
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -176,7 +179,6 @@
                         android:id="@+id/view"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="35dp"
                         android:background="#9e9e9e" />
                 </LinearLayout>

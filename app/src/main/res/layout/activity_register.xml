@@ -200,14 +200,14 @@
                         app:passwordToggleEnabled="true"
                         app:passwordToggleTint="#9e9d9d" >
 
-                        <EditText
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/passwordEt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@android:color/transparent"
                             android:inputType="textPassword"
                             android:textColor="@color/white"
-                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:paddingTop="5dp"
                             android:textSize="12sp"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -233,15 +233,15 @@
                             app:passwordToggleEnabled="true"
                             app:passwordToggleTint="#9e9d9d" >
 
-                            <EditText
+                            <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/cpasswordEt"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:inputType="textPassword"
                                 android:textColor="@color/white"
-                                android:textCursorDrawable="@drawable/cursor_color"
-                                android:textSize="12sp"/>
+                                android:paddingTop="5dp"
+                                android:textSize="12sp" />
 
                         </com.google.android.material.textfield.TextInputLayout>
 

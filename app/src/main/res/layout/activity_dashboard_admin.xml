@@ -7,173 +7,153 @@
     android:layout_height="match_parent"
     tools:context=".DashboardAdminActivity">
 
-
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nscrollView"
+    <LinearLayout
         style="@style/parent.contentLayout"
         android:layout_width="match_parent"
-        android:layout_height="678dp"
-        android:background="@drawable/ic_topbk">
+        android:layout_height="match_parent"
+        android:background="@drawable/back01"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/menuBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/menu" />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/name1"
+                android:textColor="@color/new_blue"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/logoutBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/logout" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp">
+
+            <ImageView
+                android:id="@+id/test111"
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/del_boy" />
+
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/subTitleIv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Hello \nAdmin"
-                    android:textColor="#333232"
-                    android:textSize="24sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/hero" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="0dp"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/new_blue"
+                    android:minHeight="100dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        app:cardCornerRadius="15dp"
-                        app:cardPreventCornerOverlap="true">
+                    <TextView
+                        android:id="@+id/textViewSub1Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:text="Approve \nPick-Up" />
 
-                        <net.colindodd.gradientlayout.GradientRelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:minHeight="100dp"
-                            android:padding="10dp"
-                            gl:end_color="@color/gradientLightYellow"
-                            gl:start_color="@color/gradientLightOrange">
+                </androidx.cardview.widget.CardView>
 
-                            <TextView
-                                android:id="@+id/textViewSub1Title"
-                                style="@style/viewParent.headerText.HomeCardTitle"
-                                android:layout_centerInParent="true"
-                                android:layout_marginTop="20dp"
-                                android:text="Approve Pick-Up" />
-
-                        </net.colindodd.gradientlayout.GradientRelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        app:cardCornerRadius="15dp"
-                        app:cardPreventCornerOverlap="true">
-
-                        <net.colindodd.gradientlayout.GradientRelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:minHeight="100dp"
-                            android:padding="10dp"
-                            gl:end_color="@color/gradientLightBlue"
-                            gl:start_color="@color/gradientLightOrange2">
-
-                            <TextView
-                                android:id="@+id/textViewSub3Title"
-                                style="@style/viewParent.headerText.HomeCardTitle"
-                                android:layout_centerInParent="true"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="History Pick-Up" />
-
-                        </net.colindodd.gradientlayout.GradientRelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/new_blue"
+                    android:minHeight="100dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        app:cardCornerRadius="15dp"
-                        app:cardPreventCornerOverlap="true">
+                    <TextView
+                        android:id="@+id/textViewSub3Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:text="History \nPick-Up" />
 
-                        <net.colindodd.gradientlayout.GradientRelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:minHeight="100dp"
-                            android:padding="10dp"
-                            gl:end_color="@color/gradientOrange3"
-                            gl:start_color="@color/gradientLightOrange2">
+                </androidx.cardview.widget.CardView>
 
-                            <TextView
-                                android:id="@+id/textViewSub2Title"
-                                style="@style/viewParent.headerText.HomeCardTitle"
-                                android:layout_centerInParent="true"
-                                android:layout_marginTop="20dp"
-                                android:text="Add FAQ" />
-
-                        </net.colindodd.gradientlayout.GradientRelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        app:cardCornerRadius="15dp"
-                        app:cardPreventCornerOverlap="true">
-
-                        <net.colindodd.gradientlayout.GradientRelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:minHeight="100dp"
-                            android:padding="10dp"
-                            gl:end_color="@color/gradientLightBlue"
-                            gl:start_color="@color/gradientLightGreen">
-
-                            <TextView
-                                android:id="@+id/textViewSub4Title"
-                                style="@style/viewParent.headerText.HomeCardTitle"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="Add E-Waste Info" />
-
-                        </net.colindodd.gradientlayout.GradientRelativeLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
 
-    <ImageButton
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/logoutBtn"
-        android:layout_below="@id/nscrollView"
-        android:background="@drawable/logout"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/new_blue"
+                    android:minHeight="100dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:id="@+id/textViewSub2Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:text="Add \nFAQ" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/new_blue"
+                    android:minHeight="100dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:id="@+id/textViewSub4Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:text="Add \nE-Waste \nInfo" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

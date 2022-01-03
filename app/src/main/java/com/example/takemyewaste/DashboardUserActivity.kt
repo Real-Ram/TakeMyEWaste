@@ -10,17 +10,14 @@ class DashboardUserActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDashboardUserBinding
 
-    private lateinit var firebaseAuth: FirebaseAuth
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.logoutBtn.setOnClickListener {
-            firebaseAuth.signOut()
-            startActivity(Intent(this@DashboardUserActivity, MainActivity::class.java))
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         binding.textViewSub1Title.setOnClickListener {

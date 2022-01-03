@@ -90,7 +90,8 @@
                         android:maxLines="1"
                         android:paddingTop="5dp"
                         android:hint="FirstName LastName"
-                        android:textColorHint="@color/hint_white"                           android:textCursorDrawable="@drawable/cursor_color"
+                        android:textColorHint="@color/hint_white"                           
+                        android:textCursorDrawable="@drawable/cursor_color"
                         android:textSize="15sp" />
 
                     <View
@@ -119,7 +120,8 @@
                         android:maxLines="1"
                         android:paddingTop="5dp"
                         android:hint="987654321"
-                        android:textColorHint="@color/hint_white"                           android:textCursorDrawable="@drawable/cursor_color"
+                        android:textColorHint="@color/hint_white"                        
+                        android:textCursorDrawable="@drawable/cursor_color"
                         android:textSize="15sp" />
 
                     <View
@@ -175,7 +177,8 @@
                         android:lines="2"
                         android:paddingTop="5dp"
                         android:hint="HouseName, AreaName, City, District"
-                        android:textColorHint="@color/hint_white"                           android:textCursorDrawable="@drawable/cursor_color"
+                        android:textColorHint="@color/hint_white"                           
+                        android:textCursorDrawable="@drawable/cursor_color"
                         android:textSize="15sp" />
 
                     <View

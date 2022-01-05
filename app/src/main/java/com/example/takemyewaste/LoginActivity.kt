@@ -1,11 +1,9 @@
 package com.example.takemyewaste
 
-import android.app.AlertDialog
 import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.InputType
 import android.util.Patterns
 import android.widget.Toast
 import com.example.takemyewaste.databinding.ActivityLoginBinding
@@ -14,11 +12,9 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import android.widget.EditText
 
-import android.widget.LinearLayout
-
-
+import com.example.takemyewaste.admin.DashboardAdminActivity
+import com.example.takemyewaste.user.DashboardUserActivity
 
 
 class LoginActivity : AppCompatActivity() {

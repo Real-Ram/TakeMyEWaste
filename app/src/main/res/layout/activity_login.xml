@@ -27,7 +27,8 @@
                 android:gravity="center_horizontal"
                 android:text="Login"
                 android:textColor="#333232"
-                android:textSize="30sp" />
+                android:textAllCaps="true"
+                style="@style/TetxtsizeforTitle1" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -42,6 +43,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="7.3dp"
                     android:background="@drawable/small_cicle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -102,7 +104,7 @@
                         android:fontFamily="@font/poppins_regular"
                         android:text="Email"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <EditText
                         android:id="@+id/emailEt"
@@ -118,7 +120,7 @@
                         android:textColor="@color/white"
                         android:textColorHint="@color/hint_white"
                         android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="12sp" />
+                        style="@style/TetxtsizeforForm2" />
 
                     <View
                         android:layout_width="match_parent"
@@ -133,7 +135,7 @@
                         android:fontFamily="@font/poppins_regular"
                         android:text="Password"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -152,12 +154,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@android:color/transparent"
-                                android:drawableStart="@drawable/ic_email_gray"
+                                android:drawableStart="@drawable/ic_lock_gray"
                                 android:ems="15"
                                 android:inputType="textPassword"
                                 android:paddingTop="10dp"
+                                android:textCursorDrawable="@drawable/cursor_color"
                                 android:textColor="@color/white"
-                                android:textSize="12sp" />
+                                style="@style/TetxtsizeforForm2" />
 
                         </com.google.android.material.textfield.TextInputLayout>
 

@@ -17,8 +17,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-
             <TextView
+                style="@style/TetxtsizeforTitle1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -26,8 +26,8 @@
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center_horizontal"
                 android:text="Register"
-                android:textColor="#333232"
-                android:textSize="30sp" />
+                android:textAllCaps="true"
+                android:textColor="#333232" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -61,7 +61,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:paddingLeft="14.5dp">
 
@@ -72,11 +72,11 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
+                android:layout_height="472dp"
                 android:layout_marginLeft="13dp"
                 android:layout_marginRight="35.6dp"
-                android:backgroundTint="@color/new_blue"
-                android:background="@drawable/rectangle">
+                android:background="@drawable/rectangle"
+                android:backgroundTint="@color/new_blue">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -96,28 +96,28 @@
                         android:textSize="16.7sp" />
 
                     <TextView
+                        style="@style/TetxtsizeforForm1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="22.3dp"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Name"
-                        android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        android:textColor="@color/white" />
 
                     <EditText
                         android:id="@+id/nameEt"
+                        style="@style/TetxtsizeforForm2"
                         android:layout_width="match_parent"
-                        android:hint="FirstName LastName"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
+                        android:hint="FirstName LastName"
                         android:inputType="textPersonName"
                         android:maxLength="24"
                         android:maxLines="1"
                         android:paddingTop="5dp"
                         android:textColor="@color/white"
                         android:textColorHint="@color/hint_white"
-                        android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="12sp" />
+                        android:textCursorDrawable="@drawable/cursor_color" />
 
                     <View
                         android:layout_width="match_parent"
@@ -126,28 +126,28 @@
                         android:background="#9e9e9e" />
 
                     <TextView
+                        style="@style/TetxtsizeforForm1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="22.3dp"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Mobile"
-                        android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        android:textColor="@color/white" />
 
                     <EditText
                         android:id="@+id/mobileEt"
+                        style="@style/TetxtsizeforForm2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
+                        android:hint="987654321"
                         android:inputType="phone"
                         android:maxLength="10"
                         android:maxLines="1"
                         android:paddingTop="5dp"
-                        android:hint="987654321"
                         android:textColor="@color/white"
                         android:textColorHint="@color/hint_white"
-                        android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="12sp" />
+                        android:textCursorDrawable="@drawable/cursor_color" />
 
                     <View
                         android:layout_width="match_parent"
@@ -157,27 +157,28 @@
 
 
                     <TextView
+                        style="@style/TetxtsizeforForm1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="22.3dp"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Email"
-                        android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        android:textColor="@color/white" />
 
                     <EditText
                         android:id="@+id/emailEt"
+                        style="@style/TetxtsizeforForm2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
+                        android:hint="Example@gmail.com"
                         android:inputType="textEmailAddress"
                         android:maxLength="24"
                         android:maxLines="1"
                         android:paddingTop="5dp"
                         android:textColor="@color/white"
-                        android:hint="Example@gmail.com"
-                        android:textColorHint="@color/hint_white"                        android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="12sp" />
+                        android:textColorHint="@color/hint_white"
+                        android:textCursorDrawable="@drawable/cursor_color" />
 
                     <View
                         android:layout_width="match_parent"
@@ -186,40 +187,42 @@
                         android:background="#9e9e9e" />
 
                     <TextView
+                        style="@style/TetxtsizeforForm1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="22.3dp"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Password"
-                        android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        android:textColor="@color/white" />
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="36dp"
                         app:passwordToggleEnabled="true"
-                        app:passwordToggleTint="#9e9d9d" >
+                        app:passwordToggleTint="#9e9d9d">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/passwordEt"
+                            style="@style/TetxtsizeforForm2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/ic_lock_gray"
                             android:inputType="textPassword"
-                            android:textColor="@color/white"
                             android:paddingTop="5dp"
-                            android:textSize="12sp"/>
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textColor="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <TextView
+                        style="@style/TetxtsizeforForm1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="23dp"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Confirm Password"
-                        android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        android:textColor="@color/white" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -231,17 +234,19 @@
                             android:layout_width="match_parent"
                             android:layout_height="36dp"
                             app:passwordToggleEnabled="true"
-                            app:passwordToggleTint="#9e9d9d" >
+                            app:passwordToggleTint="#9e9d9d">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/cpasswordEt"
+                                style="@style/TetxtsizeforForm2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
+                                android:drawableStart="@drawable/ic_lock_gray"
                                 android:inputType="textPassword"
-                                android:textColor="@color/white"
                                 android:paddingTop="5dp"
-                                android:textSize="12sp" />
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textColor="@color/white" />
 
                         </com.google.android.material.textfield.TextInputLayout>
 

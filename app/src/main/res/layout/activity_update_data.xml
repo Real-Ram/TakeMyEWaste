@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".UpdateDataActivity">
+    tools:context=".user.UpdateDataActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,16 +18,44 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="22dp"
-                android:drawableRight="@drawable/half_circle"
                 android:fontFamily="@font/poppins_semibold"
-                android:gravity="bottom"
-                android:text="Update Your Account"
+                android:gravity="center_horizontal"
+                android:text="Update your data"
+                android:textAllCaps="true"
                 android:textColor="#333232"
-                android:textSize="30sp" />
+                style="@style/TetxtsizeforTitle1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="7.3dp"
+                    android:background="@drawable/small_cicle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/half_circle"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/half_circle" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -44,7 +72,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="480dp"
+                android:layout_height="512dp"
                 android:layout_marginLeft="13dp"
                 android:layout_marginRight="35.6dp"
                 android:backgroundTint="@color/new_blue"
@@ -65,7 +93,7 @@
                         android:gravity="center_horizontal"
                         android:text="Fill the Details!!"
                         android:textColor="@color/white"
-                        android:textSize="14sp" />
+                        android:textSize="16.7sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -74,7 +102,7 @@
                         android:fontFamily="@font/poppins_regular"
                         android:text="Name"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <EditText
                         android:id="@+id/nameEt"
@@ -89,7 +117,7 @@
                         android:paddingTop="5dp"
                         android:textColorHint="@color/hint_white"
                         android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="15sp" />
+                        style="@style/TetxtsizeforForm2" />
 
                     <View
                         android:layout_width="match_parent"
@@ -104,7 +132,7 @@
                         android:fontFamily="@font/poppins_regular"
                         android:text="Mobile"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <EditText
                         android:id="@+id/mobileEt"
@@ -119,7 +147,7 @@
                         android:paddingTop="5dp"
                         android:textColorHint="@color/hint_white"
                         android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="15sp" />
+                        style="@style/TetxtsizeforForm2" />
 
                     <View
                         android:layout_width="match_parent"
@@ -135,7 +163,7 @@
                         android:fontFamily="@font/poppins_regular"
                         android:text="Email"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <EditText
                         android:id="@+id/emailEt"
@@ -150,7 +178,7 @@
                         android:paddingTop="5dp"
                         android:textColorHint="@color/hint_white"
                         android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="15sp" />
+                        style="@style/TetxtsizeforForm2" />
 
                     <View
                         android:layout_width="match_parent"
@@ -165,7 +193,7 @@
                         android:fontFamily="@font/poppins_regular"
                         android:text="Password"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -181,8 +209,9 @@
                             android:fontFamily="@font/poppins_regular"
                             android:inputType="textPassword"
                             android:textColor="@color/white"
+                            android:drawableStart="@drawable/ic_lock_gray"
                             android:textCursorDrawable="@drawable/cursor_color"
-                            android:textSize="15sp" />
+                            style="@style/TetxtsizeforForm2" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -193,7 +222,7 @@
                         android:fontFamily="@font/poppins_regular"
                         android:text="Confirm Password"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -209,8 +238,9 @@
                             android:fontFamily="@font/poppins_regular"
                             android:inputType="textPassword"
                             android:textColor="@color/white"
+                            android:drawableStart="@drawable/ic_lock_gray"
                             android:textCursorDrawable="@drawable/cursor_color"
-                            android:textSize="15sp" />
+                            style="@style/TetxtsizeforForm2" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 

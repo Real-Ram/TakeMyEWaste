@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">TakeMyEWaste</string>
     <string name="name1">TakeMy<b><u>EWaste</u></b></string>
+    <string name="name2">TakeMy<b>EWaste</b></string>
 
 
 </resources>

@@ -10,10 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
-            android:name=".UpdateDataActivity"
+            android:name=".ProfileData"
             android:exported="false" />
         <activity
-            android:name=".NewPickUpActivity"
+            android:name=".PickUpStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.ShowEWasteFaqUser"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddEwasteDetails"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddFaq"
+            android:exported="false" />
+        <activity
+            android:name=".user.UpdateDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.NewPickUpActivity"
             android:exported="false" />
         <activity
             android:name=".ForgetPasswordActivity"
@@ -25,10 +40,10 @@
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".DashboardAdminActivity"
+            android:name=".admin.DashboardAdminActivity"
             android:exported="true" />
         <activity
-            android:name=".DashboardUserActivity"
+            android:name=".user.DashboardUserActivity"
             android:exported="true" />
         <activity
             android:name=".SplashActivity"

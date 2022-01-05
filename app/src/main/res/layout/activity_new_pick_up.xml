@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".NewPickUpActivity">
+    tools:context=".user.NewPickUpActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,22 +15,47 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:orientation="horizontal">
 
-
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="22dp"
-                android:drawableRight="@drawable/half_circle"
                 android:fontFamily="@font/poppins_semibold"
-                android:gravity="left"
-                android:text="Place a new request for pick up"
+                android:gravity="center_horizontal"
+                android:text="Request For Pick Up"
+                android:textAllCaps="true"
                 android:textColor="#333232"
-                android:textSize="30sp" />
+                style="@style/TetxtsizeforTitle1" />
 
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="7.3dp"
+                    android:background="@drawable/small_cicle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/half_circle"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/half_circle" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -68,16 +93,16 @@
                         android:gravity="center_horizontal"
                         android:text="Fill the Details!!"
                         android:textColor="@color/white"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="22.3dp"
+                        android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Name"
-                        android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1"
+                        android:textColor="@color/white"/>
 
                     <EditText
                         android:id="@+id/nameEt"
@@ -91,7 +116,7 @@
                         android:paddingTop="5dp"
                         android:hint="FirstName LastName"
                         android:textColorHint="@color/hint_white"                           android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="15sp" />
+                        style="@style/TetxtsizeforForm2" />
 
                     <View
                         android:layout_width="match_parent"
@@ -106,7 +131,7 @@
                         android:fontFamily="@font/poppins_regular"
                         android:text="Mobile"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <EditText
                         android:id="@+id/mobileEt"
@@ -120,7 +145,7 @@
                         android:paddingTop="5dp"
                         android:hint="987654321"
                         android:textColorHint="@color/hint_white"                           android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="15sp" />
+                        style="@style/TetxtsizeforForm2" />
 
                     <View
                         android:layout_width="match_parent"
@@ -136,10 +161,10 @@
                         android:fontFamily="@font/poppins_regular"
                         android:text="Products"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <EditText
-                        android:id="@+id/emailEt"
+                        android:id="@+id/productsEt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
@@ -149,7 +174,7 @@
                         android:hint="1. Product 1\n2. Product 2\n3. Product 3\n4. Product 4"
                         android:textColorHint="@color/hint_white"
                         android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="15sp" />
+                        style="@style/TetxtsizeforForm2" />
 
                     <View
                         android:layout_width="match_parent"
@@ -164,10 +189,10 @@
                         android:fontFamily="@font/poppins_regular"
                         android:text="Address"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <EditText
-                        android:id="@+id/passwordEt"
+                        android:id="@+id/addressEt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
@@ -176,7 +201,7 @@
                         android:paddingTop="5dp"
                         android:hint="HouseName, AreaName, City, District"
                         android:textColorHint="@color/hint_white"                           android:textCursorDrawable="@drawable/cursor_color"
-                        android:textSize="15sp" />
+                        style="@style/TetxtsizeforForm2" />
 
                     <View
                         android:layout_width="match_parent"
@@ -189,9 +214,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="23dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="Suitable Timing"
+                        android:text="Time"
                         android:textColor="@color/white"
-                        android:textSize="12.3sp" />
+                        style="@style/TetxtsizeforForm1" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -200,17 +225,24 @@
                         android:paddingTop="5dp">
 
                         <EditText
-                            android:id="@+id/cpasswordEt"
-                            android:layout_width="match_parent"
+                            android:id="@+id/timeanddateEt"
+                            style="@style/TetxtsizeforForm2"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@android:color/transparent"
                             android:fontFamily="@font/poppins_regular"
+                            android:hint="Click the Clock to get time"
                             android:inputType="datetime"
-                            android:textColor="#333232"
-                            android:hint="10:10PM  24/11/2021"
+                            android:paddingTop="10dp"
                             android:textColorHint="@color/hint_white"
-                            android:textCursorDrawable="@drawable/cursor_color"
-                            android:textSize="15sp" />
+                            android:textCursorDrawable="@drawable/cursor_color" />
+
+                        <ImageButton
+                            android:id="@+id/timeanddateBtn"
+                            android:layout_width="46dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/time" />
 
                     </RelativeLayout>
 
@@ -226,7 +258,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linear"
+            android:id="@+id/confirmBtn"
             android:layout_width="90dp"
             android:layout_height="41dp"
             android:layout_alignParentRight="true"
@@ -239,7 +271,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/registerBtn"
+                android:id="@+id/confirmTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

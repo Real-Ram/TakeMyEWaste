@@ -5,7 +5,7 @@
     xmlns:gl="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DashboardUserActivity">
+    tools:context=".user.DashboardUserActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,21 +20,20 @@
             android:layout_height="30dp">
 
             <ImageButton
-                android:id="@+id/menuBtn"
+                android:id="@+id/profileDataBtn"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentLeft="true"
-                android:background="@drawable/menu" />
+                android:background="@drawable/profile" />
 
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:layout_centerInParent="true"
                 android:gravity="center"
-                android:text="@string/name1"
-                android:textColor="@color/new_blue"
-
-                android:textSize="18dp" />
+                android:text="@string/name2"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
 
             <ImageButton
                 android:layout_width="30dp"
@@ -61,6 +60,31 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newPickupBtn"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:minHeight="100dp"
+                android:backgroundTint="@color/new_blue"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_gravity="center"
+                    style="@style/viewParent.headerText.HomeCardTitle"
+                    android:layout_centerInParent="true"
+                    android:text="New Pick-Up Request" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <LinearLayout
@@ -76,51 +100,15 @@
                     app:cardCornerRadius="15dp"
                     app:cardPreventCornerOverlap="true"
                     android:minHeight="100dp"
+                    android:id="@+id/pickupStatusBtn"
                     android:backgroundTint="@color/new_blue"
                     android:layout_marginTop="10dp">
 
                     <TextView
-                        android:id="@+id/textViewSub1Title"
                         style="@style/viewParent.headerText.HomeCardTitle"
                         android:layout_centerInParent="true"
                         android:layout_gravity="center"
-                        android:text="New \nPick-Up" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="15dp"
-                    app:cardPreventCornerOverlap="true"
-                    android:minHeight="100dp"
-                    android:backgroundTint="@color/new_blue"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:id="@+id/textViewSub3Title"
-                        style="@style/viewParent.headerText.HomeCardTitle"
-                        android:layout_centerInParent="true"
-                        android:layout_gravity="center"
-                        android:text="Pick-Up \nHistory" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="15dp"
-                    app:cardPreventCornerOverlap="true"
-                    android:minHeight="100dp"
-                    android:backgroundTint="@color/new_blue"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:id="@+id/textViewSub5Title"
-                        style="@style/viewParent.headerText.HomeCardTitle"
-                        android:layout_centerInParent="true"
-                        android:layout_gravity="center"
-                        android:text="FAQ" />
+                        android:text="Pick-Up \nStatus" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -135,6 +123,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
+                    android:id="@+id/pickUpHistoryBtn"
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="15dp"
                     app:cardPreventCornerOverlap="true"
@@ -143,51 +132,39 @@
                     android:layout_marginTop="10dp">
 
                     <TextView
-                        android:id="@+id/textViewSub2Title"
-                        style="@style/viewParent.headerText.HomeCardTitle"
-                        android:layout_centerInParent="true"
-                        android:layout_gravity="center"
-                        android:text="Pick-Up \nStatus" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="15dp"
-                    app:cardPreventCornerOverlap="true"
-                    android:minHeight="100dp"
-                    android:backgroundTint="@color/new_blue"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:id="@+id/textViewSub4Title"
                         android:layout_gravity="center"
                         style="@style/viewParent.headerText.HomeCardTitle"
                         android:layout_centerInParent="true"
-                        android:text="Update \nData" />
+                        android:text="Pick-Up\nHistory" />
 
                 </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="15dp"
-                    app:cardPreventCornerOverlap="true"
-                    android:minHeight="100dp"
-                    android:backgroundTint="@color/new_blue"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:id="@+id/textViewSub6Title"
-                        android:layout_gravity="center"
-                        style="@style/viewParent.headerText.HomeCardTitle"
-                        android:layout_centerInParent="true"
-                        android:text="E-Waste \nInfo" />
-
-                </androidx.cardview.widget.CardView>
-
             </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/EWasteFaqBtn"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:minHeight="100dp"
+                android:backgroundTint="@color/new_blue"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_gravity="center"
+                    style="@style/viewParent.headerText.HomeCardTitle"
+                    android:layout_centerInParent="true"
+                    android:text="E-Waste Infromation" />
+
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
 
     </LinearLayout>

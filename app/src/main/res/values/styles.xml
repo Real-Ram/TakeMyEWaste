@@ -95,5 +95,10 @@
         <item name="android:layout_gravity">center</item>
     </style>
 
+    <style name="rounder_corner_image">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+
 
 </resources>

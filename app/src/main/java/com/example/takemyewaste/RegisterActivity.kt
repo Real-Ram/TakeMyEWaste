@@ -123,6 +123,7 @@ class RegisterActivity : AppCompatActivity() {
         hashMap["uid"] = uid
         hashMap["email"] = email
         hashMap["name"] = name
+        hashMap["profileImage"] = ""
         hashMap["mobile"] = mobile
         hashMap["userType"] = "user"
         hashMap["timestamp"] = timestamp

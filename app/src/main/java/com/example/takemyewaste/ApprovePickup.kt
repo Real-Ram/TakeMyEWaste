@@ -2,6 +2,7 @@ package com.example.takemyewaste
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.takemyewaste.databinding.ActivityApprovePickupBinding
 import com.example.takemyewaste.databinding.ActivityPickUpStatusBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -9,10 +10,10 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-class PickUpStatusActivity : AppCompatActivity() {
+class ApprovePickup : AppCompatActivity() {
 
     //View binding
-    private lateinit var binding: ActivityPickUpStatusBinding
+    private lateinit var binding: ActivityApprovePickupBinding
 
     //Firebase Auth
     private lateinit var firebaseAuth: FirebaseAuth
@@ -21,11 +22,11 @@ class PickUpStatusActivity : AppCompatActivity() {
     private lateinit var pickupStatusArrayList: ArrayList<ModelPickUp>
 
     //adapter
-    private lateinit var adapterPickupStatus: AdapterPickupStatus
+    private lateinit var adapterApprovePickup: AdapterApprovePickup
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityPickUpStatusBinding.inflate(layoutInflater)
+        binding = ActivityApprovePickupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //init firebase auth
@@ -34,7 +35,6 @@ class PickUpStatusActivity : AppCompatActivity() {
 
     }
 
-    //show the pickup status
     private fun loadPickupStatus() {
         //init arraylisdt
         pickupStatusArrayList = ArrayList()
@@ -53,10 +53,10 @@ class PickUpStatusActivity : AppCompatActivity() {
                     pickupStatusArrayList.add(model!!)
                 }
                 //setup adapter
-                adapterPickupStatus = AdapterPickupStatus(this@PickUpStatusActivity, pickupStatusArrayList)
+                adapterApprovePickup = AdapterApprovePickup(this@ApprovePickup, pickupStatusArrayList)
 
                 //set adapter to recyclerview
-                binding.pickupStatusRv.adapter = adapterPickupStatus
+                binding.pickupStatusAdminRv.adapter = adapterApprovePickup
             }
 
             override fun onCancelled(error: DatabaseError) {

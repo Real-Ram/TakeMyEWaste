@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.takemyewaste.ApprovePickup
 import com.example.takemyewaste.LoginActivity
 import com.example.takemyewaste.ProfileData
 import com.example.takemyewaste.user.NewPickUpActivity
@@ -30,6 +31,8 @@ class DashboardAdminActivity : AppCompatActivity() {
 
         binding.approvePickupBtn.setOnClickListener {
             Toast.makeText(this, "You clicked Approve Pick-Up Button", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, ApprovePickup::class.java))
+
         }
 
         binding.allPickUpHistoryBtn.setOnClickListener {

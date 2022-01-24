@@ -40,29 +40,30 @@ class PickUpStatusActivity : AppCompatActivity() {
         pickupStatusArrayList = ArrayList()
 
         //get all categories from firebase database....Firebase DB >Categories
-        val ref = FirebaseDatabase.getInstance().getReference("EwastePickUp")
-        ref.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                //clear list before starting adding data into it
-                pickupStatusArrayList.clear()
-                for (ds in snapshot.children){
-                    //get data as model
-                    val model = ds.getValue(ModelPickUp::class.java)
+        val ref = FirebaseDatabase.getInstance().getReference("PendingPickup-user")
+        ref.child(firebaseAuth.uid!!)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    //clear list before starting adding data into it
+                    pickupStatusArrayList.clear()
+                    for (ds in snapshot.children){
+                        //get data as model
+                        val model = ds.getValue(ModelPickUp::class.java)
 
-                    //add to arraylist
-                    pickupStatusArrayList.add(model!!)
+                        //add to arraylist
+                        pickupStatusArrayList.add(model!!)
+                    }
+                    //setup adapter
+                    adapterPickupStatus = AdapterPickupStatus(this@PickUpStatusActivity, pickupStatusArrayList)
+
+                    //set adapter to recyclerview
+                    binding.pickupStatusRv.adapter = adapterPickupStatus
                 }
-                //setup adapter
-                adapterPickupStatus = AdapterPickupStatus(this@PickUpStatusActivity, pickupStatusArrayList)
 
-                //set adapter to recyclerview
-                binding.pickupStatusRv.adapter = adapterPickupStatus
-            }
+                override fun onCancelled(error: DatabaseError) {
 
-            override fun onCancelled(error: DatabaseError) {
-
-            }
-        })
+                }
+            })
     }
 
 }

@@ -106,9 +106,11 @@ class NewPickUpActivity : AppCompatActivity() {
         hashMap["time"] = time
         hashMap["uid"] = "${firebaseAuth.uid}"
 
+
+        //for User
         //add to firebase db: Database Root > Categories > CategoryId > CategoryInfo
-        val ref = FirebaseDatabase.getInstance().getReference("EwastePickUp")
-        ref.child("$timestamp")
+        val ref = FirebaseDatabase.getInstance().getReference("PendingPickup-user")
+        ref.child(firebaseAuth.uid!!).child("$timestamp")
             .setValue(hashMap)
             .addOnSuccessListener {
                 progressDialog.dismiss()
@@ -119,5 +121,17 @@ class NewPickUpActivity : AppCompatActivity() {
                 progressDialog.dismiss()
                 Toast.makeText(this, "Failed to add due to ${e.message}", Toast.LENGTH_SHORT).show()
             }
+
+        //for Admin
+        val ref1 = FirebaseDatabase.getInstance().getReference("PendingPickup-admin")
+        ref1.child("$timestamp")
+            .setValue(hashMap)
+            .addOnSuccessListener {
+
+            }
+            .addOnFailureListener {
+
+            }
+
     }
 }

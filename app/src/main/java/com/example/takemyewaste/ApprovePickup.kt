@@ -40,8 +40,8 @@ class ApprovePickup : AppCompatActivity() {
         pickupStatusArrayList = ArrayList()
 
         //get all categories from firebase database....Firebase DB >Categories
-        val ref = FirebaseDatabase.getInstance().getReference("EwastePickUp")
-        ref.addValueEventListener(object : ValueEventListener {
+        val ref = FirebaseDatabase.getInstance().getReference("PendingPickup-admin")
+        ref.orderByChild("id").addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 //clear list before starting adding data into it
                 pickupStatusArrayList.clear()

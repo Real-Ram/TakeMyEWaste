@@ -49,6 +49,7 @@ class RegisterActivity : AppCompatActivity() {
             * */
             validateData()
         }
+
     }
 
     private var name = ""

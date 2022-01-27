@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.takemyewaste.ApprovePickup
+import com.example.takemyewaste.DeliveryAgents
 import com.example.takemyewaste.LoginActivity
 import com.example.takemyewaste.ProfileData
 import com.example.takemyewaste.user.NewPickUpActivity
@@ -32,11 +33,20 @@ class DashboardAdminActivity : AppCompatActivity() {
         binding.approvePickupBtn.setOnClickListener {
             Toast.makeText(this, "You clicked Approve Pick-Up Button", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, ApprovePickup::class.java))
+        }
 
+        binding.processingPickupBtn.setOnClickListener {
+            Toast.makeText(this, "You clicked Processing Pick-Up Button", Toast.LENGTH_SHORT).show()
         }
 
         binding.allPickUpHistoryBtn.setOnClickListener {
             Toast.makeText(this, "You clicked All Pick-Up History Button", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.deliveryAgentsBtn.setOnClickListener {
+            Toast.makeText(this, "You clicked Delivery Agent Button", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, DeliveryAgents::class.java))
+
         }
 
         binding.EwasteInfoBtn.setOnClickListener {

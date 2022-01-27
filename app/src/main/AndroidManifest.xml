@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".AddDeliveryAgents"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryAgents"
+            android:exported="false" />
+        <activity
             android:name=".ApprovePickup"
             android:exported="false" />
         <activity

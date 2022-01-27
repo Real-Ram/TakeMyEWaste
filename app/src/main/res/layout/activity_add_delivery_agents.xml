@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".admin.AddFaq">
+    tools:context=".AddDeliveryAgents">
 
 
     <LinearLayout
@@ -25,7 +25,7 @@
                 android:layout_marginLeft="22dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center_horizontal"
-                android:text="Add Ewaste Details"
+                android:text="Add New Delivery Agents"
                 android:textColor="#333232"
                 android:textAllCaps="true"
                 style="@style/TetxtsizeforTitle1" />
@@ -50,7 +50,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
                 <FrameLayout
                     android:id="@+id/half_circle"
                     android:layout_width="50dp"
@@ -75,10 +74,10 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/QueEt"
+                    android:id="@+id/NameEt"
                     android:background="@drawable/shape_edittext01"
                     android:drawablePadding="10dp"
-                    android:hint="Enter Question ?"
+                    android:hint="Enter name of the Delivery Agent"
                     android:padding="10dp"
                     android:textColor="@color/white"
                     android:fontFamily="@font/poppins"
@@ -97,14 +96,13 @@
                 app:hintEnabled="false">
 
                 <EditText
-                    android:id="@+id/AnsEt"
+                    android:id="@+id/MobileEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shape_edittext01"
                     android:drawablePadding="10dp"
                     android:fontFamily="@font/poppins"
-                    android:hint="Enter Answers..."
-                    android:lines="10"
+                    android:hint="Enter mobile number of Delivery Agent"
                     android:maxLines="100"
                     android:padding="10dp"
                     android:textColor="@color/white"

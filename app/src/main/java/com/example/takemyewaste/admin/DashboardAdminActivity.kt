@@ -1,14 +1,11 @@
 package com.example.takemyewaste.admin
 
+import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.takemyewaste.ApprovePickup
-import com.example.takemyewaste.DeliveryAgents
-import com.example.takemyewaste.LoginActivity
-import com.example.takemyewaste.ProfileData
-import com.example.takemyewaste.user.NewPickUpActivity
+import com.example.takemyewaste.*
 import com.example.takemyewaste.databinding.ActivityDashboardAdminBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -22,8 +19,19 @@ class DashboardAdminActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.logoutBtn.setOnClickListener {
-            FirebaseAuth.getInstance().signOut()
-            startActivity(Intent(this, LoginActivity::class.java))
+
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("LOGOUT")
+                .setMessage("Are you sure you want to logout now?")
+                .setPositiveButton("Confirm"){ a, d->
+                    Toast.makeText(this, "logging out....", Toast.LENGTH_SHORT).show()
+                    FirebaseAuth.getInstance().signOut()
+                    startActivity(Intent(this, LoginActivity::class.java))
+                }
+                .setNegativeButton("Cancel"){a, d->
+                    a.dismiss()
+                }
+                .show()
         }
 
         binding.profileDataBtn.setOnClickListener {
@@ -35,12 +43,16 @@ class DashboardAdminActivity : AppCompatActivity() {
             startActivity(Intent(this, ApprovePickup::class.java))
         }
 
-        binding.processingPickupBtn.setOnClickListener {
-            Toast.makeText(this, "You clicked Processing Pick-Up Button", Toast.LENGTH_SHORT).show()
+        binding.completedPickupBtn.setOnClickListener {
+            startActivity(Intent(this, CompletedPickupAdmin::class.java))
         }
 
-        binding.allPickUpHistoryBtn.setOnClickListener {
-            Toast.makeText(this, "You clicked All Pick-Up History Button", Toast.LENGTH_SHORT).show()
+        binding.cancelledPickupBtn.setOnClickListener {
+            startActivity(Intent(this, CancelledPickupAdmin::class.java))
+        }
+
+        binding.aboutUsBtn.setOnClickListener {
+            startActivity(Intent(this, AboutUs::class.java))
         }
 
         binding.deliveryAgentsBtn.setOnClickListener {

@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Pick-Up Registered" />
+            android:text="Pick-Up Cancelled" />
 
         <TextView
             android:id="@+id/approveTextEt"
@@ -31,8 +31,9 @@
             android:layout_below="@+id/approveTv"
             android:layout_marginTop="0dp"
             android:gravity="center"
-            android:text="Pick-Up Agent will collect your E-waste in 2 to 3 Days"
+            android:text="Make a new Pick-Up request with correct details"
             android:textSize="12dp" />
+
 
         <TextView
             android:id="@+id/nameTv"

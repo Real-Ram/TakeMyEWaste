@@ -63,10 +63,10 @@
             android:id="@+id/ll2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/parent.contentLayout"
             android:layout_below="@id/ll1"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:paddingLeft="14.5dp">
+            android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"

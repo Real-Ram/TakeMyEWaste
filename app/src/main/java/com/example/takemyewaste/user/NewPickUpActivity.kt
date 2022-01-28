@@ -17,7 +17,7 @@ class NewPickUpActivity : AppCompatActivity() {
     //view binding
     private lateinit var binding: ActivityNewPickUpBinding
 
-    //firbase auth
+    //firebase auth
     private lateinit var firebaseAuth: FirebaseAuth
 
     //progress dialog
@@ -91,10 +91,14 @@ class NewPickUpActivity : AppCompatActivity() {
 
     private fun addFaqFirebase() {
         //show progressdialog
+        progressDialog.setMessage("Registering your new Pick-Up....")
         progressDialog.show()
 
         //get timestamp
         val timestamp = System.currentTimeMillis()
+        //current user id
+        val current_uid = FirebaseAuth.getInstance().currentUser!!.uid
+
 
         //setup data to add in firebase db
         val hashMap = HashMap<String,Any>()
@@ -107,10 +111,9 @@ class NewPickUpActivity : AppCompatActivity() {
         hashMap["uid"] = "${firebaseAuth.uid}"
 
 
-        //for User
         //add to firebase db: Database Root > Categories > CategoryId > CategoryInfo
-        val ref = FirebaseDatabase.getInstance().getReference("PendingPickup-user")
-        ref.child(firebaseAuth.uid!!).child("$timestamp")
+        val ref = FirebaseDatabase.getInstance().getReference("PendingPickup")
+        ref.child("$timestamp")
             .setValue(hashMap)
             .addOnSuccessListener {
                 progressDialog.dismiss()
@@ -120,17 +123,6 @@ class NewPickUpActivity : AppCompatActivity() {
             .addOnFailureListener { e->
                 progressDialog.dismiss()
                 Toast.makeText(this, "Failed to add due to ${e.message}", Toast.LENGTH_SHORT).show()
-            }
-
-        //for Admin
-        val ref1 = FirebaseDatabase.getInstance().getReference("PendingPickup-admin")
-        ref1.child("$timestamp")
-            .setValue(hashMap)
-            .addOnSuccessListener {
-
-            }
-            .addOnFailureListener {
-
             }
 
     }

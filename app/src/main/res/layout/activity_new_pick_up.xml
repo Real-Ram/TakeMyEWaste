@@ -24,7 +24,7 @@
                 android:layout_marginLeft="22dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center_horizontal"
-                android:text="Request For Pick Up"
+                android:text="New Pick Up"
                 android:textAllCaps="true"
                 android:textColor="#333232"
                 style="@style/TetxtsizeforTitle1" />
@@ -197,7 +197,7 @@
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
                         android:fontFamily="@font/poppins_regular"
-                        android:lines="2"
+                        android:lines="1"
                         android:paddingTop="5dp"
                         android:hint="HouseName, AreaName, City, District"
                         android:textColorHint="@color/hint_white"                           android:textCursorDrawable="@drawable/cursor_color"
@@ -251,7 +251,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginBottom="35dp"
+                        android:layout_marginBottom="10dp"
                         android:background="#9e9e9e" />
                 </LinearLayout>
             </LinearLayout>

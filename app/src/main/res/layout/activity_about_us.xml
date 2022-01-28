@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back01"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="22dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_horizontal"
+                android:text="About Us"
+                android:textAllCaps="true"
+                android:textColor="#333232"
+                style="@style/TetxtsizeforTitle1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="7.3dp"
+                    android:background="@drawable/small_cicle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/half_circle"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/half_circle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/parent.contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:id="@+id/test111"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/name2"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/parent.contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/justCard"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/new_blue"
+                android:minHeight="100dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/asd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Developers"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/asd2"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/asd1"
+                        android:text="Rameshwar Yadav Sangle"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/asd3"
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Project Guide"
+                        android:layout_below="@id/asd2"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/asd4"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/asd3"
+                        android:text="Dipti B. Aghor Mam"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/asd5"
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Project External"
+                        android:layout_below="@id/asd4"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/asd6"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/asd5"
+                        android:text="Jyoti Kale Mam"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/asd7"
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="College"
+                        android:layout_below="@id/asd6"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/asd8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/asd7"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="MGM College of Engineering, Nanded"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/asd9"
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="University"
+                        android:layout_below="@id/asd8"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/asd10"
+                        android:layout_width="300dp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/asd9"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="Dr.Babasaheb Ambedkar Technological University, Lonore"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Feedback"
+            android:id="@+id/feedbackBtn"
+            android:layout_marginTop="26dp"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:background="@drawable/shape_button01"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>

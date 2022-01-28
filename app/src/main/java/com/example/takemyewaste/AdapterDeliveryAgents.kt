@@ -1,11 +1,13 @@
 package layout
 
 import android.app.AlertDialog
+import android.app.ProgressDialog
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
@@ -22,6 +24,7 @@ class AdapterDeliveryAgents: RecyclerView.Adapter<AdapterDeliveryAgents.HolderCa
     private var filterList: ArrayList<ModelDeliveryAgents>
 
     private lateinit var binding: RowDeliveryAgentsBinding
+
 
     //constructor
     constructor(context: Context, deliArrayList: ArrayList<ModelDeliveryAgents>) {
@@ -94,6 +97,6 @@ class AdapterDeliveryAgents: RecyclerView.Adapter<AdapterDeliveryAgents.HolderCa
         //init ui views
         var nameTv1: TextView = binding.nameTv
         var mobileTv1: TextView = binding.mobileTv
-        var deleteBtn: ImageButton = binding.deleteBtn
+        var deleteBtn: LinearLayout = binding.deleteBtn
     }
 }

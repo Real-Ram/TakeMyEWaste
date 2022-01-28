@@ -64,14 +64,14 @@
         style="@style/parent.contentLayout"
         android:layout_height="match_parent" >
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/faqsRv"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="54dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/row_faqs" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/faqsRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="54dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/row_faqs" />
 
 
         <LinearLayout
@@ -98,6 +98,7 @@
                 android:layout_height="40dp"
                 android:id="@+id/EwasteDetailsBtn"
                 android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
                 android:background="@drawable/more"/>
 
         </LinearLayout>

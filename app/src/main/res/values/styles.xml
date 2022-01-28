@@ -33,6 +33,12 @@
         <item name="android:paddingRight">20dp</item>
     </style>
 
+    <style name="parent.contentLayout1">
+        <item name="android:background">@color/contentBodyColor</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
     <style name="viewParent.headerText">
         <item name="android:textColor">@color/contentTextColor</item>
         <item name="android:textSize">20sp</item>
@@ -63,20 +69,28 @@
     <style name="viewParent.headerText.HomeCardTitle">
         <item name="android:paddingTop">0dp</item>
         <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+
         <item name="android:layout_alignParentTop">true</item>
     </style>
 
     <style name="TetxtsizeforForm1">
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">14dp</item>
     </style>
 
     <style name="TetxtsizeforForm2">
-        <item name="android:textSize">14dp</item>
+        <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="TetxtsizeforTitle1">
-        <item name="android:textSize">24dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
 
     <style name="pickupstatus_title">

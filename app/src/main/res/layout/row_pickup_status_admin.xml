@@ -18,7 +18,6 @@
         <TextView
             android:id="@+id/nameTv"
             style="@style/pickupstatus_title"
-            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name" />
@@ -49,10 +48,10 @@
 
         <TextView
             android:id="@+id/mobileEt"
-            android:layout_below="@+id/mobileTv"
             style="@style/pickupstatus_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/mobileTv"
             android:text="987654321" />
 
         <View
@@ -73,10 +72,10 @@
 
         <TextView
             android:id="@+id/productEt"
-            android:layout_below="@+id/productTv"
             style="@style/pickupstatus_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/productTv"
             android:text="1. Product\n2. Product" />
 
         <View
@@ -97,10 +96,10 @@
 
         <TextView
             android:id="@+id/addressEt"
-            android:layout_below="@+id/addressTv"
             style="@style/pickupstatus_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/addressTv"
             android:text="colony, city, state" />
 
         <View
@@ -121,10 +120,10 @@
 
         <TextView
             android:id="@+id/timeEt"
-            android:layout_below="@+id/timeTv"
             style="@style/pickupstatus_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/timeTv"
             android:text="dd:mm:yyyy hh:mm:ss" />
 
         <View
@@ -136,33 +135,56 @@
             android:layout_marginBottom="10dp"
             android:background="@color/white" />
 
-        <Button
-            android:id="@+id/approveBtn"
+        <LinearLayout
+            android:id="@+id/receivedBtn"
             android:layout_width="132dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/view5"
+            android:layout_height="34dp"
             android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:layout_below="@+id/view5"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/white"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="APPROVE" />
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <Button
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Pick-Up Received"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cancelBtn"
             android:layout_width="132dp"
-            android:layout_height="60dp"
-            android:id="@+id/disApproveBtn"
-            android:layout_below="@id/view5"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="34dp"
             android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_below="@+id/view5"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle"
             android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="DISAPPROVE"/>
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Cancel Pick-Up"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
 
     </RelativeLayout>
 

@@ -93,13 +93,13 @@
                         android:gravity="center_horizontal"
                         android:text="Fill the Details!!"
                         android:textColor="@color/white"
-                        android:textSize="16.7sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         style="@style/TetxtsizeforForm1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="22.3dp"
+                        android:layout_marginTop="18dp"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Name"
                         android:textColor="@color/white" />
@@ -111,6 +111,8 @@
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
                         android:hint="FirstName LastName"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_person_gray"
                         android:inputType="textPersonName"
                         android:maxLength="24"
                         android:maxLines="1"
@@ -141,6 +143,8 @@
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
                         android:hint="987654321"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_call_gray"
                         android:inputType="phone"
                         android:maxLength="10"
                         android:maxLines="1"
@@ -174,7 +178,9 @@
                         android:hint="Example@gmail.com"
                         android:inputType="textEmailAddress"
                         android:maxLength="24"
+                        android:drawableStart="@drawable/ic_email_gray"
                         android:maxLines="1"
+                        android:drawablePadding="10dp"
                         android:paddingTop="5dp"
                         android:textColor="@color/white"
                         android:textColorHint="@color/hint_white"
@@ -204,12 +210,14 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/passwordEt"
                             style="@style/TetxtsizeforForm2"
+                            android:layout_marginLeft="-16dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@android:color/transparent"
                             android:drawableStart="@drawable/ic_lock_gray"
                             android:inputType="textPassword"
                             android:paddingTop="5dp"
+                            android:drawablePadding="10dp"
                             android:textCursorDrawable="@drawable/cursor_color"
                             android:textColor="@color/white" />
 
@@ -227,8 +235,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingTop="5dp">
+                        android:orientation="horizontal">
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
@@ -239,12 +246,14 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/cpasswordEt"
                                 style="@style/TetxtsizeforForm2"
+                                android:layout_marginLeft="-16dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:drawableStart="@drawable/ic_lock_gray"
                                 android:inputType="textPassword"
                                 android:paddingTop="5dp"
+                                android:drawablePadding="10dp"
                                 android:textCursorDrawable="@drawable/cursor_color"
                                 android:textColor="@color/white" />
 

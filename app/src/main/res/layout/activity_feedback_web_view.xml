@@ -4,29 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user.ShowEWasteFaqUser">
+    tools:context=".FeedbackWebView">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/test111"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                style="@style/TetxtsizeforTitle1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="22dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center_horizontal"
-                android:text="Ewaste Information"
+                android:text="Feedback"
                 android:textAllCaps="true"
-                android:textColor="#333232" />
+                android:textColor="#333232"
+                style="@style/TetxtsizeforTitle1" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -41,7 +41,6 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="7.3dp"
                     android:background="@drawable/small_cicle" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -58,21 +57,12 @@
             </LinearLayout>
         </LinearLayout>
 
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            style="@style/parent.contentLayout"
-
-            android:id="@+id/faqsRv1"
-            android:layout_below="@+id/test111"
+        <WebView
+            android:id="@+id/webView1"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            tools:listitem="@layout/row_faqs_user"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
 
-    </RelativeLayout>
+    </LinearLayout>
 
-
-
-    </RelativeLayout>
+</RelativeLayout>

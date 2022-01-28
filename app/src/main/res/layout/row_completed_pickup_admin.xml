@@ -21,22 +21,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Pick-Up Registered" />
+            android:text="Pick-Up Delivered" />
 
-        <TextView
-            android:id="@+id/approveTextEt"
-            style="@style/pickupstatus_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/approveTv"
-            android:layout_marginTop="0dp"
-            android:gravity="center"
-            android:text="Pick-Up Agent will collect your E-waste in 2 to 3 Days"
-            android:textSize="12dp" />
 
         <TextView
             android:id="@+id/nameTv"
-            android:layout_below="@id/approveTextEt"
+            android:layout_below="@id/approveTv"
             style="@style/pickupstatus_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

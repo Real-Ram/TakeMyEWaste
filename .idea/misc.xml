@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/half_circle.xml" value="0.275" />
         <entry key="app/src/main/res/drawable/home_gradient_maths.xml" value="0.24814814814814815" />
         <entry key="app/src/main/res/drawable/ic_back_white.xml" value="0.24351851851851852" />
+        <entry key="app/src/main/res/drawable/ic_call.xml" value="0.321025641025641" />
         <entry key="app/src/main/res/drawable/ic_effort.xml" value="0.184375" />
         <entry key="app/src/main/res/drawable/ic_email_gray.xml" value="0.21851851851851853" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.28425925925925927" />
@@ -26,13 +27,19 @@
         <entry key="app/src/main/res/drawable/shape_toolbar01.xml" value="0.21851851851851853" />
         <entry key="app/src/main/res/drawable/small_cicle.xml" value="0.275" />
         <entry key="app/src/main/res/font/poppins.xml" value="0.275" />
+        <entry key="app/src/main/res/layout/activity_about_us.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_add_delivery_agents.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_add_ewaste_details.xml" value="0.28125" />
         <entry key="app/src/main/res/layout/activity_add_faq.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_approve_pickup.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_cancelled_pickup.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_cancelled_pickup_admin.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_completed_pickup.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_completed_pickup_admin.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_dashboard_admin.xml" value="0.2851851851851852" />
         <entry key="app/src/main/res/layout/activity_dashboard_user.xml" value="0.2851851851851852" />
         <entry key="app/src/main/res/layout/activity_delivery_agents.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_feedback_web_view.xml" value="0.29583333333333334" />
         <entry key="app/src/main/res/layout/activity_forget_password.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
@@ -46,6 +53,10 @@
         <entry key="app/src/main/res/layout/back_wave.xml" value="0.1" />
         <entry key="app/src/main/res/layout/card.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/dialog.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/row_cancelled_pickup.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/row_cancelled_pickup_admin.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/row_completed_pickup.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/row_completed_pickup_admin.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/row_del-info.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/row_delivery_agents.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/row_faqs.xml" value="0.2953125" />

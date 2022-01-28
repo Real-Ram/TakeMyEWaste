@@ -8,7 +8,6 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        style="@style/parent.contentLayout"
         android:layout_height="match_parent" >
 
         <LinearLayout
@@ -25,7 +24,7 @@
                 android:layout_marginLeft="22dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center_horizontal"
-                android:text="Approve Pick Up"
+                android:text="Latest Pick-Up"
                 android:textAllCaps="true"
                 android:textColor="#333232" />
 
@@ -59,13 +58,14 @@
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_below="@id/ll1"
-            android:layout_height="match_parent"
             android:id="@+id/pickupStatusAdminRv"
+            style="@style/parent.contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll1"
             android:layout_marginBottom="10dp"
-            tools:listitem="@layout/row_pickup_status_admin"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_pickup_status_admin" />
 
 
     </RelativeLayout>

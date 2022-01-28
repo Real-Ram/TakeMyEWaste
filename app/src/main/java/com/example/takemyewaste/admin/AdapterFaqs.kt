@@ -90,6 +90,6 @@ class AdapterFaqs: RecyclerView.Adapter<AdapterFaqs.HolderCategory> {
         //init ui views
         var quetionTv: TextView = binding.QuesTv
         var answerTv: TextView = binding.AnsTv
-        var deleteBtn: ImageButton = binding.deleteBtn
+        var deleteBtn: LinearLayout = binding.deleteBtn
     }
 }

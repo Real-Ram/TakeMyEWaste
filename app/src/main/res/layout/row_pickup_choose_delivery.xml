@@ -135,39 +135,113 @@
             android:layout_marginBottom="10dp"
             android:background="@color/white" />
 
+
+        <TextView
+            android:id="@+id/deliveryBoyNameTv"
+            style="@style/pickupstatus_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view5"
+            android:text="Delivery Boy Name" />
+
+        <EditText
+            android:id="@+id/deliveryBoyNameEt"
+            style="@style/TetxtsizeforForm2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="FirstName LastName"
+            android:inputType="textPersonName"
+            android:maxLength="24"
+            android:layout_below="@+id/deliveryBoyNameTv"
+            android:maxLines="1"
+            android:paddingTop="5dp"
+            android:textColorHint="@color/hint_white"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/view6"
+            android:layout_height="1dp"
+            android:layout_below="@id/deliveryBoyNameEt"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white" />
+
+
+        <TextView
+            android:id="@+id/deliveryBoyMobileTv"
+            style="@style/pickupstatus_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view6"
+            android:text="Delivery Boy Mobile" />
+
+        <EditText
+            android:id="@+id/deliveryBoyMobileEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_below="@+id/deliveryBoyMobileTv"
+            android:maxLines="1"
+            android:paddingTop="5dp"
+            android:hint="987654321"
+            android:textColorHint="@color/hint_white"                           android:textCursorDrawable="@drawable/cursor_color"
+            style="@style/TetxtsizeforForm2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/view7"
+            android:layout_height="1dp"
+            android:layout_below="@id/deliveryBoyMobileEt"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/deliveryBoyDateTv"
+            style="@style/pickupstatus_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view7"
+            android:text="Estimate Pick-Up Date" />
+
+        <EditText
+            android:id="@+id/deliveryBoyDateEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="date"
+            android:maxLength="10"
+            android:layout_below="@+id/deliveryBoyDateTv"
+            android:maxLines="1"
+            android:paddingTop="5dp"
+            android:hint="please enter the estimate pickup date"
+            android:textColorHint="@color/hint_white"                           android:textCursorDrawable="@drawable/cursor_color"
+            style="@style/TetxtsizeforForm2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/view8"
+            android:layout_height="1dp"
+            android:layout_below="@id/deliveryBoyDateEt"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white" />
+
+
         <LinearLayout
-            android:id="@+id/approveBtn"
-            android:layout_width="116dp"
-            android:layout_height="34dp"
-            android:layout_alignParentLeft="true"
-            android:layout_gravity="right"
-            android:layout_below="@+id/view5"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rectangle"
-            android:backgroundTint="@color/white"
-            android:layout_marginLeft="10dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/poppins_semibold"
-                android:gravity="center"
-                android:text="Approve Pick-Up"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/cancelBtn"
+            android:id="@+id/goToDeliveryBtn"
             android:layout_width="116dp"
             android:layout_height="34dp"
             android:layout_alignParentRight="true"
             android:layout_gravity="right"
-            android:layout_below="@+id/view5"
+            android:layout_below="@+id/view8"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle"
@@ -181,7 +255,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center"
-                android:text="Cancel Pick-Up"
+                android:text="Go For Delivery"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
         </LinearLayout>

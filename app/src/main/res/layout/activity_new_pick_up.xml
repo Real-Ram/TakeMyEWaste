@@ -106,17 +106,18 @@
 
                     <EditText
                         android:id="@+id/nameEt"
+                        style="@style/TetxtsizeforForm2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
                         android:fontFamily="@font/poppins_regular"
+                        android:hint="FirstName LastName"
                         android:inputType="textPersonName"
                         android:maxLength="24"
                         android:maxLines="1"
                         android:paddingTop="5dp"
-                        android:hint="FirstName LastName"
-                        android:textColorHint="@color/hint_white"                           android:textCursorDrawable="@drawable/cursor_color"
-                        style="@style/TetxtsizeforForm2" />
+                        android:textColorHint="@color/hint_white"
+                        android:textCursorDrawable="@drawable/cursor_color" />
 
                     <View
                         android:layout_width="match_parent"

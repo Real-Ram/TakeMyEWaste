@@ -32,11 +32,13 @@
         <entry key="app/src/main/res/layout/activity_add_ewaste_details.xml" value="0.28125" />
         <entry key="app/src/main/res/layout/activity_add_faq.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_approve_pickup.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_approved_pickup_deliveryboy.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_cancelled_pickup.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_cancelled_pickup_admin.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_completed_pickup.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_completed_pickup_admin.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_dashboard_admin.xml" value="0.2851851851851852" />
+        <entry key="app/src/main/res/layout/activity_dashboard_deliveryboy.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_dashboard_user.xml" value="0.2851851851851852" />
         <entry key="app/src/main/res/layout/activity_delivery_agents.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_feedback_web_view.xml" value="0.29583333333333334" />
@@ -61,6 +63,7 @@
         <entry key="app/src/main/res/layout/row_delivery_agents.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/row_faqs.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/row_faqs_user.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/row_pickup_choose_delivery.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/row_pickup_status.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/row_pickup_status_admin.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.2953125" />

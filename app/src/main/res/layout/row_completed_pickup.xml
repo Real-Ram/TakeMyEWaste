@@ -31,7 +31,7 @@
             android:layout_below="@+id/approveTv"
             android:layout_marginTop="0dp"
             android:gravity="center"
-            android:text="Thanks for making the right decision, it will be very helpful to reduce global population."
+            android:text="Thanks for making the right decision, it will be very helpful to reduce global polution."
             android:textSize="12dp" />
 
 

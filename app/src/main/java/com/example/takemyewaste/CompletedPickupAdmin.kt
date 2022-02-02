@@ -42,7 +42,7 @@ class CompletedPickupAdmin : AppCompatActivity() {
 
 
         //get all categories from firebase database....Firebase DB >Categories
-        val ref = FirebaseDatabase.getInstance().getReference("Completed_order")
+        val ref = FirebaseDatabase.getInstance().getReference("Completed_Order")
         ref.orderByChild("uid")
             .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {

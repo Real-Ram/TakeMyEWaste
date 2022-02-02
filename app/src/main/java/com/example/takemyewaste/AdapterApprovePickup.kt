@@ -66,7 +66,7 @@ class AdapterApprovePickup: RecyclerView.Adapter<AdapterApprovePickup.HolderCate
             builder.setTitle("Cancel")
                 .setMessage("Are you sure you want to cancel this pickup?")
                 .setPositiveButton("Confirm"){ a, d->
-                    Toast.makeText(context, "Deleting....", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Cancelling....", Toast.LENGTH_SHORT).show()
                     sendToDbCancel(model, holder)
                 }
                 .setNegativeButton("Cancel"){a, d->
@@ -76,14 +76,14 @@ class AdapterApprovePickup: RecyclerView.Adapter<AdapterApprovePickup.HolderCate
         }
 
         //handle receive click
-        holder.receiveBtn.setOnClickListener {
+        holder.approveBtn.setOnClickListener {
 
             val builder = AlertDialog.Builder(context)
-            builder.setTitle("Received the Pick-Up")
-                .setMessage("Are you sure you got the pickup?")
+            builder.setTitle("Approve the Pick-Up")
+                .setMessage("Are you sure you want to approve this pickup?")
                 .setPositiveButton("Confirm"){ a, d->
-                    Toast.makeText(context, "Deleting....", Toast.LENGTH_SHORT).show()
-                    sendToDbReceive(model, holder)
+                    Toast.makeText(context, "Approving....", Toast.LENGTH_SHORT).show()
+                    sendToDbApprove(model, holder)
                 }
                 .setNegativeButton("Cancel"){a, d->
                     a.dismiss()
@@ -102,30 +102,30 @@ class AdapterApprovePickup: RecyclerView.Adapter<AdapterApprovePickup.HolderCate
         ref.child(id)
             .setValue(model)
             .addOnSuccessListener {
-                cancelPickUp(model, holder)
+                removePickUp(model, holder)
             }
             .addOnFailureListener { e->
                 Toast.makeText(context, "Unable to due to ${e.message}", Toast.LENGTH_SHORT).show()
             }
     }
 
-    private fun sendToDbReceive(model: ModelPickUp, holder: AdapterApprovePickup.HolderCategory) {
+    private fun sendToDbApprove(model: ModelPickUp, holder: AdapterApprovePickup.HolderCategory) {
 
         val id = model.id
 
-        val ref = FirebaseDatabase.getInstance().getReference("Completed_order")
+        val ref = FirebaseDatabase.getInstance().getReference("Approved_Order")
 
         ref.child(id)
             .setValue(model)
             .addOnSuccessListener {
-                cancelPickUp(model, holder)
+                removePickUp(model, holder)
             }
             .addOnFailureListener { e->
                 Toast.makeText(context, "Unable to due to ${e.message}", Toast.LENGTH_SHORT).show()
             }
     }
 
-    private fun cancelPickUp(model: ModelPickUp, holder: AdapterApprovePickup.HolderCategory) {
+    private fun removePickUp(model: ModelPickUp, holder: AdapterApprovePickup.HolderCategory) {
 
         //get id of category to delete
         val id = model.id
@@ -135,10 +135,10 @@ class AdapterApprovePickup: RecyclerView.Adapter<AdapterApprovePickup.HolderCate
         ref.child(id)
             .removeValue()
             .addOnSuccessListener {
-                Toast.makeText(context, "Deleted....", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Approving....", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener {e->
-                Toast.makeText(context, "Unable to delete due to ${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Unable to approve due to ${e.message}", Toast.LENGTH_SHORT).show()
             }
     }
 
@@ -156,6 +156,6 @@ class AdapterApprovePickup: RecyclerView.Adapter<AdapterApprovePickup.HolderCate
         var addressTv: TextView = binding.addressEt
         var timeTv: TextView = binding.timeEt
         var cancelBtn: LinearLayout = binding.cancelBtn
-        var receiveBtn: LinearLayout = binding.receivedBtn
+        var approveBtn: LinearLayout = binding.approveBtn
     }
 }

@@ -122,6 +122,10 @@ class LoginActivity : AppCompatActivity() {
                         startActivity(Intent(this@LoginActivity, DashboardAdminActivity::class.java))
                         finish()
                     }
+                    else if (userType == "deliveryboy") {
+                        startActivity(Intent(this@LoginActivity, DashboardDeliveryboy::class.java))
+                        finish()
+                    }
                 }
 
                 override fun onCancelled(error: DatabaseError) {

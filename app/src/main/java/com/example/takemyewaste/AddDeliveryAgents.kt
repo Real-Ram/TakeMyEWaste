@@ -10,6 +10,7 @@ import com.example.takemyewaste.databinding.ActivityAddDeliveryAgentsBinding
 import com.example.takemyewaste.databinding.ActivityAddFaqBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
+import java.util.regex.Pattern
 
 class AddDeliveryAgents : AppCompatActivity() {
 
@@ -53,11 +54,11 @@ class AddDeliveryAgents : AppCompatActivity() {
 
 
         //validate data
-        if(name.isEmpty()){
-            Toast.makeText(this, "Enter Name of the Delivery Agent", Toast.LENGTH_SHORT).show()
+        if(!Pattern.compile("[a-zA-Z ]+").matcher(name).matches()){
+            Toast.makeText(this, "Enter valid Name of the Delivery Agent", Toast.LENGTH_SHORT).show()
         }
-        else if(mobile.isEmpty()){
-            Toast.makeText(this, "Enter Mobile of the Delivery Agent", Toast.LENGTH_SHORT).show()
+        else if (!Pattern.compile("[6-9][0-9]{9}").matcher(mobile).matches()) {
+            Toast.makeText(this, "Enter valid Mobile Pattern....", Toast.LENGTH_SHORT).show()
         }
         else {
             addDeliveryAgentFirebase()

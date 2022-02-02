@@ -26,6 +26,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.storage.FirebaseStorage
 import java.lang.Exception
+import java.util.regex.Pattern
 
 class UpdateDataActivity : AppCompatActivity() {
 
@@ -70,10 +71,10 @@ class UpdateDataActivity : AppCompatActivity() {
         name = binding.nameEt.text.toString().trim()
         mobile = binding.mobileEt.text.toString().trim()
 
-        if (name.isEmpty()){
+        if (!Pattern.compile("[a-zA-Z ]+").matcher(name).matches()){
             Toast.makeText(this, "Enter Name", Toast.LENGTH_SHORT).show()
         }
-        else if (mobile.isEmpty()){
+        else if (!Pattern.compile("[6-9][0-9]{9}").matcher(mobile).matches()){
             Toast.makeText(this, "Enter Mobile", Toast.LENGTH_SHORT).show()
         }
         else{

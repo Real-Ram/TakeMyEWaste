@@ -2,6 +2,7 @@ package com.example.takemyewaste
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import com.example.takemyewaste.databinding.ActivityPickUpStatusBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot

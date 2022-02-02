@@ -59,16 +59,18 @@
         <RelativeLayout
             android:layout_width="match_parent"
             style="@style/parent.contentLayout"
-
             android:layout_height="270dp">
 
-            <ImageView
+            <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/test111"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="220dp"
                 android:layout_centerInParent="true"
                 android:adjustViewBounds="true"
-                android:src="@drawable/del_boy" />
+                android:scaleType="centerCrop"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="delivery-red.json"
+                app:lottie_loop="true" />
 
         </RelativeLayout>
 

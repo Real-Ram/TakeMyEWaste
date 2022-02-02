@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import java.text.SimpleDateFormat
 import java.util.*
+import java.util.regex.Pattern
 
 class NewPickUpActivity : AppCompatActivity() {
 
@@ -69,10 +70,10 @@ class NewPickUpActivity : AppCompatActivity() {
 
 
         //validate data
-        if(name.isEmpty()){
+        if(!Pattern.compile("[a-zA-Z ]+").matcher(name).matches()){
             Toast.makeText(this, "Enter name", Toast.LENGTH_SHORT).show()
         }
-        else if(mobile.isEmpty()){
+        else if(!Pattern.compile("[6-9][0-9]{9}").matcher(mobile).matches()){
             Toast.makeText(this, "Enter mobile", Toast.LENGTH_SHORT).show()
         }
         else if(product.isEmpty()){

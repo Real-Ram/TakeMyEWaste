@@ -137,7 +137,7 @@
 
         <LinearLayout
             android:id="@+id/receivedBtn"
-            android:layout_width="132dp"
+            android:layout_width="116dp"
             android:layout_height="34dp"
             android:layout_alignParentLeft="true"
             android:layout_gravity="right"
@@ -145,7 +145,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle"
             android:backgroundTint="@color/white"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -163,12 +163,12 @@
 
         <LinearLayout
             android:id="@+id/cancelBtn"
-            android:layout_width="132dp"
+            android:layout_width="116dp"
             android:layout_height="34dp"
             android:layout_alignParentRight="true"
             android:layout_gravity="right"
             android:layout_below="@+id/view5"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle"
             android:backgroundTint="@color/white"

@@ -66,14 +66,14 @@ class RegisterActivity : AppCompatActivity() {
         val cPassword = binding.cpasswordEt.text.toString().trim()
 
         //validate data
-        if (name.isEmpty()) {
+        if (!Pattern.compile("[a-zA-Z ]+").matcher(name).matches()) {
             Toast.makeText(this, "Enter Your Name....", Toast.LENGTH_SHORT).show()
         }
         else if (!Pattern.compile("[6-9][0-9]{9}").matcher(mobile).matches()) {
-            Toast.makeText(this, "Invalid Mobile Pattern....", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Enter valid Mobile Pattern....", Toast.LENGTH_SHORT).show()
         }
         else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            Toast.makeText(this, "Invalid Email Pattern....", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Enter valid Email Pattern....", Toast.LENGTH_SHORT).show()
         }
         else if (password.isEmpty()) {
             Toast.makeText(this, "Enter Password....", Toast.LENGTH_SHORT).show()

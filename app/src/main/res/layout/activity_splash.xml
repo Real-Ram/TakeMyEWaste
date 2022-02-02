@@ -9,6 +9,7 @@
     android:background="@color/white"
     tools:context=".SplashActivity">
 
+
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -17,11 +18,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/name1"
         android:textColor="@color/black"
         android:textSize="36sp" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/test111"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="splash-wave.json"
+        app:lottie_loop="true" />
 
 </LinearLayout>
